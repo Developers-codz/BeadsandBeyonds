@@ -31,3 +31,15 @@ carouselButtons.forEach(button =>{
 
     })
 })
+
+// aside
+
+const hamburgerBtn = document.querySelector("#hamburger-btn")
+const sideSection = document.querySelector("#side-section")
+const sidebarClose = document.querySelector("#sidebar-close")
+hamburgerBtn.addEventListener("click",()=>{
+    sideSection.style.left="0"
+})
+sidebarClose.addEventListener("click",()=>{
+    sideSection.style.left = "-50%"
+})

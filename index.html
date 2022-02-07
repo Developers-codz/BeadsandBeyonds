@@ -11,7 +11,7 @@
 </head>
 <body>
     <Header class="">
-        <div class="hamburger-wrapper">
+        <div class="hamburger-wrapper" id="hamburger-btn">
             <i class="fa fa-bars fa-2x"></i>
         </div>
         <div>
@@ -19,9 +19,17 @@
             <small class="slogan">Decorate your world with us</small>
 
         </div>
+        <div class="mr-auto page-link-wrapper font3">
+            <ul class="style-list-none">
+                <li class="inline-block"><a href="#" class="page-link decor-none active-item">Home</a></li>
+                <li class="inline-block"><a href="#" class="page-link decor-none">Shop</a></li>
+            </ul>
+            
+            
+        </div>
         <div class="badge-container">
-                <i class="fa fa-search fa-lg" id="toggle-search"></i>
-            <i class="fa fa-user fa-lg"></i>
+            <i class="fa fa-search fa-lg" id="toggle-search"></i>
+            <i class="fa fa-user fa-lg" id="user-icon"></i>
             <i class="fa fa-heart fa-lg avatar avatar-badge">
                 <div class="status-circle icon-top-badge">4</div>  
             </i>
@@ -30,6 +38,26 @@
             </i>
         </div>
     </Header>
+    <aside class="side-section" id="side-section">
+        <div class="navbar-links">
+            <div class="sidebar-head">
+                
+                <i class="fa fa-times" id="sidebar-close"></i>
+
+            </div>
+            <div class="avatar centered mb-lg">
+                <img class="border-round img-border md-img" src="./assets/toy1.jpg" alt="Avatar">
+            </div><hr/>
+            <ul class="navbar-items">
+                <li class="active-item">Home</li>
+                <li>Shop Now</li>
+                <li>Profile</li>
+                <li>Orders</li>
+                <li>Address</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </aside>
    
     <main> <div class="search_input_wrapper" id="container_input_wrapper">
         <input type="text" class="search_input font2" placeholder="SEARCH....">
