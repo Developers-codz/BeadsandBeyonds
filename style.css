@@ -212,6 +212,7 @@ footer{
     }
     .navbar-items>li{
         padding:1rem;
+        cursor:pointer;
     }
     
     .sidebar-head{
@@ -219,5 +220,6 @@ footer{
     }
     #sidebar-close{
         margin:auto .5rem;
+        cursor: pointer;
     }
 }
