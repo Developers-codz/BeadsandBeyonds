@@ -39,6 +39,21 @@ header{
     padding-top:0;
     margin-top:0;
 }
+.page-link-wrapper{
+    margin:.8rem 1.2rem;
+}
+.page-link-wrapper > ul >li{
+    padding:0rem 1rem;
+}
+.page-link{
+    color:var(--text-color)
+}
+.page-link:hover{
+    font-weight: 700;
+}
+.active-item{
+    color:var(--primary)
+}
 .badge-container{
     margin-right: 2rem;
     margin:auto 0rem;
@@ -81,6 +96,9 @@ header{
     background-color: rgb(241, 233, 233);
     z-index: 2;
 }
+.side-section{
+    display:none;
+}
 
 main{
     grid-area: main;
@@ -108,7 +126,7 @@ main{
 .owl-carousel-btn{
     position:absolute;
     z-index: 2;
-    top:30%;
+    top:40%;
     cursor: pointer;
     color:black;
     opacity: .7;
@@ -166,11 +184,40 @@ footer{
         font-size: 65%;
     }
     .carousel{
-        min-height: 25vh;
+        min-height: 35vh;
         position:relative;
     }
     .hamburger-wrapper{
         display:block;
-        margin:1.5rem 1rem;
+        margin: auto .3rem;
+        font-size: 1.5rem;
+    }
+    .page-link-wrapper{
+        display:none;
+    }
+    #user-icon{
+        display:none;
+    }
+    .side-section{
+        display:block;
+        position:fixed;
+        top:0;
+        left:-50%;
+        background-color: var(--bg-off-white);
+        z-index: 3;
+        width:50%;
+        min-height:100vh;
+        font-size:2rem;
+        transition: all 500ms linear;
+    }
+    .navbar-items>li{
+        padding:1rem;
+    }
+    
+    .sidebar-head{
+        text-align: end;
+    }
+    #sidebar-close{
+        margin:auto .5rem;
     }
 }
