@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Beads & Beyonds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://beadsui-dev.netlify.app/css/main.css">
+</head>
+<body>
+    <Header class="">
+        <div class="hamburger-wrapper" id="hamburger-btn">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div>
+            <h1 class="header-logo">Beads & Beyonds....</h1>
+            <small class="slogan">Decorate your world with us</small>
+
+        </div>
+        <div class="mr-auto page-link-wrapper font3">
+            <ul class="style-list-none">
+                <li class="inline-block"><a href="index.html" class="page-link decor-none">Home</a></li>
+                <li class="inline-block"><a href="#" class="page-link decor-none active-item">Shop</a></li>
+            </ul>
+            
+            
+        </div>
+        <div class="badge-container">
+            <i class="fa fa-search fa-lg" id="toggle-search"></i>
+            <i class="fa fa-user fa-lg" id="user-icon"></i>
+            <i class="fa fa-heart fa-lg avatar avatar-badge">
+                <div class="status-circle icon-top-badge">4</div>  
+            </i>
+            <i class="fa fa-shopping-cart fa-lg avatar avatar-badge">
+                <div class="status-circle icon-top-badge">4</div>  
+            </i>
+        </div>
+    </Header>
+    
+    <aside class="side-section" id="side-section">
+        <div class="navbar-links">
+            <div class="sidebar-head">
+                
+                <i class="fa fa-times" id="sidebar-close"></i>
+
+            </div>
+            <div class="avatar centered mb-lg">
+                <img class="border-round img-border md-img" src="./assets/toy1.jpg" alt="Avatar">
+            </div><hr/>
+            <ul class="navbar-items">
+                <li><a class=" quick-link decor-none" href="home.html"> Home</a></li>
+                <li><a href="shop.html" class="active-item decor-none">Shop now</a></li>
+                <li><a href="#" class=" quick-link decor-none">Profile</a></li>
+                <li><a href="#" class=" quick-link decor-none">Orders</a></li>
+                <li><a href="#" class=" quick-link decor-none">Address</a></li>
+                <li><a href="#" class=" quick-link decor-none">Settings</a></li>
+            </ul>
+        </div>
+    </aside>
+   
+    <main class=""> <div class="search_input_wrapper" id="container_input_wrapper">
+        <input type="text" class="search_input font2" placeholder="SEARCH....">
+        <i class="fa fa-times fa-2x " id="search-close" ></i>
+    </div>
+
+    <div class="filters-wrapper ">
+        <div class="filter-header-wrapper mb-lg">
+            <h3>FILTERS</h3>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <hr/>
+        <div class="sort-section">
+            <h4 class="mb-lg">SORT BY</h4>
+            <div class="sort-by-price">
+                <input type="radio" name="sort-by-price" id="low-to-high"><label for="low-to-high">Price: Low to High</label>
+            </div>
+            <div class="sort-by-price">
+                <input type="radio" name="sort-by-price" id="high-to-low"><label for="high-to-low">Price: High to low</label>
+            </div>
+        </div><hr/>
+        <div class="category-section">
+            <h4 class="mb-lg">CATEGORY</h4>
+            <div class="sort-by-category">
+                <input type="radio" name="category" id="painting"><label for="painting">Paintings</label>
+            </div>
+            <div class="sort-by-category">
+                <input type="radio" name="category" id="wooden-craft"><label for="wooden-craft">Wooden Crafts</label>
+            </div>
+            <div class="sort-by-category">
+                <input type="radio" name="category" id="metallic-craft"><label for="metallic-craft">Metallic Crafts</label>
+            </div>
+            <div class="sort-by-category">
+                <input type="radio" name="category" id="marbel-craft"><label for="marbel-craft">Marbles Crafts</label>
+            </div>
+        </div><hr />
+        <div class="rating-section">
+            <h4 class="mb-lg">RATING</h4>
+            <div class="sort-by-ratings">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            </div>
+            <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+            
+        </div>
+    </div>
+    <div class="shopping-wrapper centered">
+        <!--Vertical card with badge-->
+<div class="card simple-card reset margin-md">
+    <img src="../../assets/item1.jpg" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Wind Chyme</h2>
+            <p class="text-secondary">Exclusively from Gujrat </p>
+            <div class="stars text-vibrant">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹499 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+<!--Vertical card with badge-->
+<div class="card simple-card reset margin-md ">
+    <img src="./assets/item2.jpg" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Baskets</h2>
+            <p class="text-secondary">Environment Friendly Baskets</p>
+            <div class="stars text-vibrant">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹499 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+<div class="card simple-card reset margin-md ">
+    <img src="./assets/toy2.jpg" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Toy Car</h2>
+            <p class="text-secondary">Exclusive wooden Toy</p>
+            <div class="stars text-vibrant">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹199 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+<div class="card simple-card reset margin-md ">
+    <img src="./assets/metalCraft1.jfif" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Wall Decor</h2>
+            <p class="text-secondary">Exclusive metallic hooks</p>
+            <div class="stars text-vibrant">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹199 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+<div class="card simple-card reset margin-md ">
+    <img src="./assets/painting2.webp" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Madhubani Art</h2>
+            <p class="text-secondary">Exclusively from Bihar</p>
+            <div class="stars text-vibrant">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹399 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+<div class="card simple-card reset margin-md ">
+    <img src="./assets/item3.jfif" alt="" class="card-img">
+    <div class="card-textarea">
+        <div class="left-pane evenly-padding-sm">
+            <h2 class="card-heading ">Flower Pot</h2>
+            <p class="text-secondary">Made from Marbles  </p>
+            <div class="stars text-vibrant">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="text-primary font3">₹399 only</p>
+        </div>
+        <i class="far fa-heart fa-lg evenly-padding-sm card-icon border-round"></i>
+
+    </div>
+</div>
+    </div>
+    
+       
+
+</main>
+    <footer class="centered vertical-direction">
+        <h2 class=" mb-lg ">Build with <span class="">&lt;/&gt;</span> by Kajal Kumari</h2>
+        <ul class="style-list-none mb-lg ">
+            <li class="inline-block padding-xs"><a class="footer-link" href="httlps://github.com/developers-codz">
+                <i class='fab fa-github fa-lg'></i>
+            </a>
+               </li>
+            <li class="inline-block padding-xs"><a class="footer-link" href="https://www.linkedin.com/in/kajal-kumari-52bab41aa"><i class='fab fa-linkedin fa-lg'></i></a></li>
+            <li class="inline-block padding-xs"><a class="footer-link" href="https://twitter.com/Kajal3310"><i class='fab fa-twitter fa-lg'></i></a></li>
+        </ul>
+        <small>© 2022 Beads&Beyonds <a class="decor-none footer-link" href="https://github.com/developers-codz">Developers-codz</a> </small>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

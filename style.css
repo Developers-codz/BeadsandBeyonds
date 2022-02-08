@@ -10,6 +10,7 @@ html{
 :root{
     --bg-off-white:#F1E9E7;
     --primary:#ca2535;
+    --dark:#000;
 }
 body{
     display: grid;
@@ -214,7 +215,9 @@ footer{
         padding:1rem;
         cursor:pointer;
     }
-    
+    .quick-link{
+        color:var(--dark);
+    }
     .sidebar-head{
         text-align: end;
     }
