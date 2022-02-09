@@ -77,3 +77,24 @@ input[type="radio"]{
     background: #04AA6D;
     cursor: pointer;
   }
+  @media only screen and (max-width:768px){
+    main{
+        grid-template-areas:  "aside aside aside aside"
+        "shop shop shop shop";
+    }
+    .filters-wrapper{
+        position:relative;
+    }
+    .filter-body-wrapper{
+        position:absolute;
+        z-index:1;
+        width:100%;
+        background-color: var(--bg-secondary);
+        top:-40rem;
+        transition: all 500ms linear;
+    }
+    .show-filter-body{
+        top:20px;
+        transition: all 500ms linear;
+    }
+  }
