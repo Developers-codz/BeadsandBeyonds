@@ -9,6 +9,9 @@ main{
 .shopping-wrapper{
     grid-area: shop;
 }
+.item-price{
+    color:var(--primary)
+}
 .filter-header-wrapper{
     display: flex;
     justify-content: space-around;
@@ -36,6 +39,9 @@ main{
 .sort-by-ratings{
     display: flex;
     justify-content: space-between;
+}
+input[type="radio"]{
+    margin-right: .5rem;
 }
 .slider {
     margin-top: 1rem;
