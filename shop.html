@@ -66,48 +66,51 @@
         <i class="fa fa-times fa-2x " id="search-close" ></i>
     </div>
 
-    <div class="filters-wrapper ">
+    <div class="filters-wrapper">
         <div class="filter-header-wrapper mb-lg">
-            <h3>FILTERS</h3>
+            <h3 id="filter-btn" class="reset">FILTERS</h3>
             <button class="clear-btn">Clear All</button>
         </div>
         <hr/>
-        <div class="sort-section">
-            <h4 class="mb-lg">SORT BY</h4>
-            <div class="sort-by-price">
-                <input type="radio" name="sort-by-price" id="low-to-high"><label for="low-to-high">Price: Low to High</label>
+        <div class="filter-body-wrapper" id="filter-body">
+            <div class="sort-section">
+                <h4 class="mb-lg">SORT BY</h4>
+                <div class="sort-by-price">
+                    <input type="radio" name="sort-by-price" id="low-to-high"><label for="low-to-high">Price: Low to High</label>
+                </div>
+                <div class="sort-by-price">
+                    <input type="radio" name="sort-by-price" id="high-to-low"><label for="high-to-low">Price: High to low</label>
+                </div>
+            </div><hr/>
+            <div class="category-section">
+                <h4 class="mb-lg">CATEGORY</h4>
+                <div class="sort-by-category">
+                    <input type="radio" name="category" id="painting"><label for="painting">Paintings</label>
+                </div>
+                <div class="sort-by-category">
+                    <input type="radio" name="category" id="wooden-craft"><label for="wooden-craft">Wooden Crafts</label>
+                </div>
+                <div class="sort-by-category">
+                    <input type="radio" name="category" id="metallic-craft"><label for="metallic-craft">Metallic Crafts</label>
+                </div>
+                <div class="sort-by-category">
+                    <input type="radio" name="category" id="marbel-craft"><label for="marbel-craft">Marbles Crafts</label>
+                </div>
+            </div><hr />
+            <div class="rating-section">
+                <h4 class="mb-lg">RATING</h4>
+                <div class="sort-by-ratings">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                </div>
+                <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                
             </div>
-            <div class="sort-by-price">
-                <input type="radio" name="sort-by-price" id="high-to-low"><label for="high-to-low">Price: High to low</label>
-            </div>
-        </div><hr/>
-        <div class="category-section">
-            <h4 class="mb-lg">CATEGORY</h4>
-            <div class="sort-by-category">
-                <input type="radio" name="category" id="painting"><label for="painting">Paintings</label>
-            </div>
-            <div class="sort-by-category">
-                <input type="radio" name="category" id="wooden-craft"><label for="wooden-craft">Wooden Crafts</label>
-            </div>
-            <div class="sort-by-category">
-                <input type="radio" name="category" id="metallic-craft"><label for="metallic-craft">Metallic Crafts</label>
-            </div>
-            <div class="sort-by-category">
-                <input type="radio" name="category" id="marbel-craft"><label for="marbel-craft">Marbles Crafts</label>
-            </div>
-        </div><hr />
-        <div class="rating-section">
-            <h4 class="mb-lg">RATING</h4>
-            <div class="sort-by-ratings">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            </div>
-            <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
-            
         </div>
+       
     </div>
     <div class="shopping-wrapper centered">
         <!--Vertical card with badge-->
@@ -244,5 +247,6 @@
         <small>© 2022 Beads&Beyonds <a class="decor-none footer-link" href="https://github.com/developers-codz">Developers-codz</a> </small>
     </footer>
     <script src="index.js"></script>
+    <script src="./JS/shop.js"></script>
 </body>
 </html>
