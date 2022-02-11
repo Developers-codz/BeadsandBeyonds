@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Beads & Beyonds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://beadsui-dev.netlify.app/css/main.css">
+
+</head>
+<body>
+      <!--Modal that will popup-->
+        
+      <div class="coupon-modal" id="coupon-popup">
+        <div class="modal-close-btn"><i class="fa fa-times fa-lg" id="modal-closer-btn"></i></div>
+        <div class="modal-body">
+            <h2 class="mb-lg">Apply Coupon</h2>
+            <div class="coupons-list text-secondary">
+           <label for="new-user"><input type="radio" name="coupon" id="new-user">NEW USER</label><br>
+           <small>Save ₹500 on minimum purchase of 1500</small>
+            </div>
+            <div class="coupons-list text-secondary">
+           <label for="festive"><input type="radio" name="coupon" id="festive">FESTIVE OFF</label><br>
+           <small>Save ₹300 on minimum purchase of 1000</small>
+            </div>
+            <div class="apply-coupon-btn-wrapper">
+                <button class="apply-coupon-btn">APPLY</button>
+            </div>
+        </div>
+    </div>
+    <div id="body-wrapper">
+        <Header class="">
+            <div class="hamburger-wrapper" id="hamburger-btn">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div>
+                <h1 class="header-logo">Beads & Beyonds....</h1>
+                <small class="slogan">Decorate your world with us</small>
+    
+            </div>
+            <div class="mr-auto page-link-wrapper font3">
+                <ul class="style-list-none">
+                    <li class="inline-block"><a href="index.html" class="page-link decor-none">Home</a></li>
+                    <li class="inline-block"><a href="shop.html" class="page-link decor-none">Shop</a></li>
+                </ul>
+                
+                
+            </div>
+            <div class="badge-container">
+                <i class="fa fa-search fa-lg" id="toggle-search"></i>
+                <i class="fa fa-user fa-lg" id="user-icon"></i>
+                
+                <a href="wishlist.html" class="avatar avatar-badge text-primary reset"><i class="fas fa-lg fa-heart cart "> </i>
+                    <div class="status-circle icon-top-badge-sm ">4</div>  
+                </a>
+                <a href="cart.html" class="avatar avatar-badge text-primary reset"><i class="fas fa-lg fa-shopping-cart cart "> </i>
+                    <div class="status-circle icon-top-badge-sm ">4</div>  
+                </a>
+              </div>
+            </div>
+        </Header>
+        <aside class="side-section" id="side-section">
+            <div class="navbar-links">
+                <div class="sidebar-head">
+                    
+                    <i class="fa fa-times" id="sidebar-close"></i>
+    
+                </div>
+                <div class="avatar centered mb-lg">
+                    <img class="border-round img-border md-img" src="./assets/toy1.jpg" alt="Avatar">
+                </div><hr/>
+                <ul class="navbar-items">
+                    <li><a class="decor-none" href="index.html"> Home</a></li>
+                    <li><a href="shop.html" class=" quick-link decor-none">Shop now</a></li>
+                    <li><a href="#" class=" quick-link decor-none">Profile</a></li>
+                    <li><a href="#" class=" quick-link decor-none">Orders</a></li>
+                    <li><a href="#" class=" quick-link decor-none">Address</a></li>
+                    <li><a href="#" class=" quick-link decor-none">Settings</a></li>
+                </ul>
+            </div>
+        </aside>
+       
+        <main> <div class="search_input_wrapper" id="container_input_wrapper">
+            <input type="text" class="search_input font2" placeholder="SEARCH....">
+            <i class="fa fa-times fa-2x " id="search-close" ></i>
+        </div>
+        <div class="cart-left-pane">
+           <div class="cart-items">
+               <img src="./assets/item2.jpg" alt="product">
+               <div class="cart-product-detail">
+                   <h3 class="text-vibrant">Wooden Basket</h3>
+                   <p class="text-secondary ">Environment Friendly Baskets</p>
+                   <p class="item-price font3 mb-lg">₹499 only</p>
+                   <div class="quantity mb-lg">
+                       <button>-</button>
+                       <input type="text" disabled value="2">
+                       <button>+</button>
+                   </div>
+                   <button class="wishlist-btn">Move to WishList</button>
+               </div>
+           </div>
+           <div class="cart-items">
+               <img src="./assets/metalCraft2.jfif" alt="product">
+               <div class="cart-product-detail">
+                   <h3 class="text-vibrant">Show Piece</h3>
+                   <p class="text-secondary ">Traditional home decor
+                        <small>(in metals)</small></p>
+                   <p class="item-price font3 mb-lg">₹99 only</p>
+                   <div class="quantity mb-lg">
+                       <button>-</button>
+                       <input type="text" disabled value="1">
+                       <button>+</button>
+                   </div>
+                   <button class="wishlist-btn">Move to WishList</button>
+               </div>
+           </div>
+        </div>
+        <div class="cart-right-pane">
+            <div class="bill-card">
+    
+                <h4 class="mb-lg text-vibrant">COUPONS</h4>
+                <button class="mb-lg coupon" id="coupon-btn"><i class="fa fa-tag"></i>Apply Coupon</button>
+                <h4 class="mb-lg text-vibrant">PRICE DETAILS: (3 items)</h4>
+                <div class="bill-card-body">
+                    <div class="price-breakdown">
+                        <h5 class="mb-lg">Total MRP: </h5> <span> ₹1599</span>
+                    </div>
+                    <div class="price-breakdown">
+                    <h5 class="mb-lg">Discount on MRP: </h5>  <span> ₹99</span></div>
+                    <div class="price-breakdown">
+                    <h5 class="mb-lg">Delivery charge  </h5><span class="text-success"> <strike> ₹99</strike> 
+                        free </span></div>
+                        <div class="price-breakdown bill-amount">
+                        <h5 class="">Total Amount</h5>
+                        <span>₹1500</span>
+                    </div>
+                    <button class="mb-lg place-order-btn">Place Order</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+      
+    
+    </main>
+        <footer class="centered vertical-direction">
+            <h2 class=" mb-lg ">Build with <span class="">&lt;/&gt;</span> by Kajal Kumari</h2>
+            <ul class="style-list-none mb-lg ">
+                <li class="inline-block padding-xs"><a class="footer-link" href="httlps://github.com/developers-codz">
+                    <i class='fab fa-github fa-lg'></i>
+                </a>
+                   </li>
+                <li class="inline-block padding-xs"><a class="footer-link" href="https://www.linkedin.com/in/kajal-kumari-52bab41aa"><i class='fab fa-linkedin fa-lg'></i></a></li>
+                <li class="inline-block padding-xs"><a class="footer-link" href="https://twitter.com/Kajal3310"><i class='fab fa-twitter fa-lg'></i></a></li>
+            </ul>
+            <small>© 2022 Beads&Beyonds <a class="decor-none footer-link" href="https://github.com/developers-codz">Developers-codz</a> </small>
+        </footer>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
