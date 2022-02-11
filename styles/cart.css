@@ -3,7 +3,17 @@ body{
 }
 main{
     display:grid;
-    grid-template-areas: "cart-product bill";
+    grid-template-areas: "header header"
+    "cart-product bill";
+}
+.wishlist-head-wrapper{
+    grid-area: header;
+    text-align: center;
+    padding:1rem 0rem;
+}
+.wishlist-head{
+    border-bottom: 1px solid var(--primary);
+    display: inline-block;
 }
 .cart-left-pane{
     grid-area: cart-product;
@@ -137,7 +147,8 @@ input[type="radio"]{
 
 @media only screen and (max-width:768px){
     main{
-        grid-template-areas: "cart-product" 
+        grid-template-areas:"header"
+         "cart-product" 
         "bill";
     }
     .cart-items{
