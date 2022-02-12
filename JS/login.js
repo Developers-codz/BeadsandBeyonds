@@ -1,5 +1,5 @@
-var passInput = document.querySelector("#login-pass");
-var eyeBtn = document.querySelector("#eye-btn");
+const passInput = document.querySelector("#login-pass");
+const eyeBtn = document.querySelector("#eye-btn");
 
 eyeBtn.addEventListener("click", () => {
   const type =
