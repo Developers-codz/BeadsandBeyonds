@@ -34,7 +34,7 @@
   border-bottom: 2px solid var(--primary);
 }
 .demo-login {
-  margin: 1.5rem 0rem 0rem 0rem;
+  margin-top: 1.5rem;
   padding: 0.5rem 6rem;
   background-color: var(--bg-off-white);
   border: 2px solid transparent;
