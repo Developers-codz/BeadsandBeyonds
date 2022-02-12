@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Beads & Beyonds</title>
+    <title>Login | Beads & Beyonds</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles/wishlist.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://beadsui-dev.netlify.app/css/main.css">
 
 </head>
 <body>
     <div id="body-wrapper">
-        <header class="">
+    <header class="">
             <div class="hamburger-wrapper" id="hamburger-btn">
                 <i class="fa fa-bars fa-2x"></i>
             </div>
@@ -28,13 +28,10 @@
                     <li class="inline-block"><a href="shop.html" class="page-link decor-none">Shop</a></li>
                 </ul>
                 
-                
             </div>
             <div class="badge-container">
                 <i class="fa fa-search fa-lg" id="toggle-search"></i>
-                <a href="login.html" class="avatar avatar-badge text-primary reset">
-          <i class="fa fa-user fa-lg" id="user-icon"></i>
-        </a>
+                <i class="fa fa-user fa-lg" id="user-icon"></i>
                 
                 <a href="wishlist.html" class="avatar avatar-badge text-primary reset"><i class="fas fa-lg fa-heart cart "> </i>
                     <div class="status-circle icon-top-badge-sm ">4</div>  
@@ -70,43 +67,22 @@
             <input type="text" class="search_input font2" placeholder="SEARCH....">
             <i class="fa fa-times fa-2x " id="search-close" ></i>
         </div>
-        <div class="wishlist-head-wrapper">
-            <h3 class="wishlist-head">MY WishList : </h3><span class="text-secondary font3"> 3 Items</span>
+        <div class="Login-wrapper">
+            <h3 class="wishlist-head">Login Now : </h3>
+            <div class="login-card">
+                
+                <form action="login.html">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email here" required>
+                    <input type="password" name="password" id="login-pass" class="input-field" placeholder="Enter your password here" required> <i class="far fa-eye-slash eye reset" id="eye-btn"></i>
+                    <button class="demo-login reset">Login With Test Credentials</button>
+                    <button class="login-btn reset" type="submit">Login </button>
+
+                    <div class="signin-section">Don't have an account <u class="signin-btn"> <a href="signin.html" class="text-secondary decor-none">
+                        Create Now</a></u> </div>
+                </form>
+            </div>
         </div>
-        <div class="wishlist-wrapper">
-            <div class="wishlist-card">
-                <img src="./assets/painting2.webp" alt="painting-item1" class="wishlist-img">
-            <div class="del-btn"><i class="fa fa-trash"></i></div>
-            <h2 class="card-heading ">Madhubani Art</h2>
-            <p class="text-secondary">Exclusively from Bihar</p>
-            <small class="text-success"><strike class="text-secondary">₹499</strike> 60% off </small>
-            <p class="item-price font3">₹199 only</p>
-            <div class="move-to-cart-btn-wrapper">
-                <button class="btn-to-cart">MOVE TO CART</button>
-            </div>
-            </div>
-            <div class="wishlist-card">
-                <img src="./assets/windchime2.jpeg" alt="windchime2" class="wishlist-img">
-            <div class="del-btn"><i class="fa fa-trash"></i></div>
-            <h2 class="card-heading ">Wind Chime </h2>
-            <p class="text-secondary">For your dream home</p>
-            <small class="text-success"><strike class="text-secondary">₹499</strike> 40% off </small>
-            <p class="item-price font3">₹299 only</p>
-            <div class="move-to-cart-btn-wrapper">
-                <button class="btn-to-cart">MOVE TO CART</button>
-            </div>
-            </div>
-            <div class="wishlist-card">
-                <img src="./assets/toy2.jpg" alt="painting-item1" class="wishlist-img">
-            <div class="del-btn"><i class="fa fa-trash"></i></div>
-            <h2 class="card-heading ">Toy Car</h2>
-            <p class="text-secondary">Exclusive Wooden Car</p>
-            <small class="text-success"><strike class="text-secondary">₹399</strike> 70% off </small>
-            <p class="item-price font3">₹159 only</p>
-            <div class="move-to-cart-btn-wrapper">
-                <button class="btn-to-cart">MOVE TO CART</button>
-            </div>
-            </div>
+        
         </div> 
     </main>
         <footer class="centered vertical-direction">
@@ -124,6 +100,6 @@
     </div>
     
     <script src="index.js"></script>
-    <script src="js/wishlist.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
