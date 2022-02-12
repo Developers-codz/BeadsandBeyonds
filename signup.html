@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Beads & Beyonds</title>
+    <title>Sign Up | Beads & Beyonds</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/signup.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://beadsui-dev.netlify.app/css/main.css">
 
@@ -53,7 +53,7 @@
                     <img class="border-round img-border md-img" src="./assets/toy1.jpg" alt="Avatar">
                 </div><hr/>
                 <ul class="navbar-items">
-                    <li><a class="decor-none" href="index.html"> Home</a></li>
+                    <li><a class="quick-link decor-none" href="index.html"> Home</a></li>
                     <li><a href="shop.html" class=" quick-link decor-none">Shop now</a></li>
                     <li><a href="#" class=" quick-link decor-none">Profile</a></li>
                     <li><a href="#" class=" quick-link decor-none">Orders</a></li>
@@ -67,19 +67,23 @@
             <input type="text" class="search_input font2" placeholder="SEARCH....">
             <i class="fa fa-times fa-2x " id="search-close" ></i>
         </div>
-        <div class="Login-wrapper">
-            <h3 class="wishlist-head">Login Now : </h3>
-            <div class="login-card">
+        <div class="signup-wrapper">
+            <h3 class="register-head">Register Now : </h3>
+            <div class="signup-card">
                 
-                <form action="login.html">
+                <form action="signup.html">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your full name" required>
                     <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email here" required>
-                    <input type="password" name="password" id="login-pass" class="input-field" placeholder="Enter your password here" required> <i class="far fa-eye-slash eye reset" id="eye-btn"></i>
-                    <button class="demo-login reset">Login With Test Credentials</button>
-                    <button class="login-btn reset" type="submit">Login </button>
+                    <input type="password" name="password" id="sign-pass" class="input-field" placeholder="Enter your password here" required> <i class="far fa-eye-slash eye reset" id="eye-btn"></i>
+                    <input type="password" name="password"  class="input-field" id="sign-pass-confirm" placeholder="Re-type your password" required>
+                   <div id="pass-checker-area"></div>
+                    <button class="signup-btn reset" type="submit">Sign Up</button>
 
-                    <div class="signin-section">Don't have an account <u class="signin-btn"> <a href="signup.html" class="text-secondary decor-none">
-                        Create Now</a></u> </div>
+                    <div class="signin-section">Already have an account ? <u class="signin-btn"> <a href="login.html" class="text-secondary decor-none">
+                        Login Now</a></u> </div>
                 </form>
+                
+                
             </div>
         </div>
         
@@ -100,6 +104,6 @@
     </div>
     
     <script src="index.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>
