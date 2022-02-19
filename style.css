@@ -143,6 +143,9 @@ main {
 .next {
   right: 1rem;
 }
+.responsive-img {
+  object-fit: cover;
+}
 
 /* featured categories */
 
@@ -185,7 +188,6 @@ footer {
     font-size: 65%;
   }
   .carousel {
-    min-height: 35vh;
     position: relative;
   }
   .hamburger-wrapper {
